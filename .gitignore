@@ -1,0 +1,5 @@
+# ignore mac files
+.DS_store
+
+# ignore jupyter book build directory
+_build/
