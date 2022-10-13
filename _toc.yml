@@ -4,6 +4,9 @@
 format: jb-book
 root: home
 parts:
+  - caption: General
+    chapters:
+    - file: schedule
   - caption: Instrument Plans
     chapters:
     - file: preamp
