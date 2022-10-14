@@ -1,8 +1,14 @@
-# Syllabus
+# Building The Brain
+
+Alternative titles:
+- **Harnessing Bioelectricity**
+- **Neuromorphic Design**
+- **The Biology of Electricity**
+- **Excitable Networks**
 
 Target:
 - 20 students? (Start with 10 for first pilot of class?)
-- NSB, PHYS, BIOL (, MATH?)
+- NSB, IDEAS, PHYS, BIOL, CIS (, MATH?)
 
 ## Aims
 
@@ -15,6 +21,17 @@ Target:
 ## Schedule
 
 With each topic aim for: 1) one shorter day of introducing concepts and computational modeling and 2) one longer day of experiments with circuits and living tissue (students pair up for experiments). The actual scripting of the computational models could be included or provided. Use of the computational models for simulations of neural physiology would be used to supplement experiments on biological tissue.
+
+### 0: Introduction to BioElectricity
+
+::::{admonition} Electric Fish Demo
+:::{image} /images/weakly-electric-fish-Efields-locate-communicate.jpeg
+:width: 600
+:align: center
+:::
+
+Discussion of "excitable" membranes and "excitable" networks
+::::
 
 ### 1: Passive Spread (and differential measurement)
 
@@ -35,7 +52,7 @@ $$
 
 ::::{admonition} Experiments
 :::{image} /images/space-constant.png
-:width: 800
+:width: 700
 :align: center
 :::
 Measure a membrane polarization from different distances. Compare effect of electrode configurations.  
@@ -62,10 +79,10 @@ $$
 
 ::::{admonition} Experiments
 :::{image} /images/plant-membrane-potential.png
-:width: 500
+:width: 400
 :align: center
 :::
-Test the effect of ion concentration on resting membrane potential
+Just resting potential (no spiking yet). Test the effect of ion concentration on resting membrane potential.
 ::::
 
 ### 3: Responses to input and Filtering
@@ -104,7 +121,7 @@ $$
 :align: center
 :::
 :::{image} /images/HH-model.png
-:width: 500
+:width: 400
 :align: center
 :::
 ::::
@@ -117,7 +134,29 @@ $$
 Test the effect of ion concentration on action potential shape (and/or pharma to block Ca2+ channels)
 ::::
 
-### 5: Circuits
+### 5: Amplification and Transistor Logic
+
+- analogy between transistor logic and action potentials
+- basic amplification principles for recording most biological signals
+- implementation of RC circuits for signal processing
+transistor-logic.png
+
+::::{admonition} Models
+:::{image} /images/transistor-logic.png
+:width: 500
+:align: center
+:::
+::::
+
+::::{admonition} Experiments
+:::{image} /images/two-stage-amp.png
+:width: 500
+:align: center
+:::
+Building an amplifier to measure action potentials in biological tissue.
+::::
+
+### 6: Neural Circuits/Networks
 
 - circuits underlying behavior: sensory stimulus --> decision --> motor response
 - stimulus-specificity for different circuits
@@ -133,11 +172,16 @@ Computational models of synaptically-connected neurons (even if it is just pre-s
 :align: center
 :::
 
+:::{image} /images/LGF-and-MGF-action-potentials-and-the-corresponding-electrode-placement-Channel-1-and.png
+:width: 600
+:align: center
+:::
+
 Two distinct Giant Fibers with different morphology are activated by touch to separate pools of sensory receptors
 ::::
 
 
-### 6: Conduction Velocity
+### 7: Conduction Velocity
 
 - reinforcing connections between anatomy and physiology
 - the difference between electrical transmission in passive circuits versus biological membrane propogation of action potentials
@@ -160,7 +204,7 @@ $$
 
 ::::{admonition} Experiments
 :::{image} /images/earthworm-conduction-velocity.jpeg
-:width: 500
+:width: 400
 :align: center
 :::
 
@@ -170,7 +214,7 @@ $$
 :::
 ::::
 
-### 7: Excitability
+### 8: Excitability
 
 - interaction between resistance and capacitance
 - short versus long square-wave stimulation of neural membranes
@@ -182,14 +226,91 @@ Can use RC model of the membrane. Could also add a parameter in the model for de
 
 ::::{admonition} Experiments
 :::{image} /images/strength-duration_Lapicque.png
-:width: 400
+:width: 300
 :align: center
 :::
 Caveat: if using earthworm, requires precise stimulation and readout of that stimulation (duration with resolution in the 10microsecond range and amplitude).  
 Alternative: Simulation of computational model from RC circuits (with spiking added or spike threshold marker). *Benefit* of this alternative is that 
 ::::
 
-### 8: "Catching" an action potential
+### 9: Sensory Physiology
+
+- graded sensory receptor potentials
+- temporal summation
+- short-term plasticity
+
+:::{admonition} Models
+Add in a time and/or voltage-dependent change in excitability.
+:::
+
+::::{admonition} Experiments
+:::{image} /images/crayfish-erg.png
+:width: 500
+:align: center
+:::
+Amplitude and flicker-frequency tungin.
+::::
+
+### 10: Motor Coordination 
+
+- Patterns across time in high dimensional space
+- Dimensionality reduction (PCA)
+- Matrix transformations
+- Brain Computer Interfaces (BCI)
+
+:::{admonition} Models
+:::{image} /images/network-model-cpg.png
+:width: 600
+:align: center
+:::
+
+::::{admonition} Experiments
+:::{image} /images/kriti-violin.png
+:width: 400
+:align: center
+:::
+Simultaneous multi-channel recordings of movement. Optional: video-tracking.
+::::
+
+### 11-13: Project Implementations
+
+::::{admonition} Retinal Receptive fields
+:::{image} /images/retina.png
+:width: 600
+:align: center
+:::
+
+Analog circuit or even photodiode inputs to a network of arduino-based LIF model neurons for a combo analog and digital model of the circuit.
+::::
+
+::::{admonition} Central Pattern Generators
+:::{image} /images/spikeling.png
+:width: 500
+:align: center
+:::
+
+The outputs can then convergently and divergently synapse onto an array of actuators with different synaptic weights to generate antagonistic muscle control. 
+::::
+
+::::{admonition} Olfaction
+:::{image} /images/eag-odor-discrimination.png
+:width: 700
+:align: center
+:::
+
+Odor Discrimination using Insect Electroantennogram Responses from an Insect Antennal Array. Comparison of EAG profiles across various insect species
+
+:::{image} /images/olfactory-robot.jpeg
+:width: 500
+:align: center
+:::
+
+Odor plume following (if have working mobile robot to send the control signals to)
+::::
+
+## Back-Burner modules
+
+### TBD: "Catching" an action potential
 
 - interaction between space constant and time constant
 - reinforce/review understanding of differential measurement of electrical events
@@ -203,19 +324,6 @@ Alternative: Simulation of computational model from RC circuits (with spiking ad
 Use differential amplification techniques to trap an action potential between the electrodes. Does not require electrical stimulation, though that can make it easier. 
 ::::
 
-### 9: Sensory Physiology
-
-- graded sensory receptor potentials
-- temporal summation
-- short-term plasticity
-
-### 10: Motor Coordination 
-
-- Patterns across time in high dimensional space
-- Dimensionality reduction (PCA)
-- Matrix transformations
-- Brain Computer Interfaces (BCI)
-
 ## Materials
 
 - 10x magnifying? monofocal? simple magnifying glass?
@@ -226,3 +334,12 @@ Use differential amplification techniques to trap an action potential between th
 - bright illumination (can be LED unless too much electrical noise)
 - lots of pins to make earthworm recording chamber
 - 3D print (or acrylic?) plant recording chamber
+- **ADC** 
+	- audio input for 2 channels if enough amplification
+	- arduino if slow enough (and enough amplificiation)
+	- serial oscilloscope
+	- **	**, but most expensive
+	- Teensy should work great, but don't have it tested yet
+
+
+
