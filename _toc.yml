@@ -6,7 +6,7 @@ root: home
 parts:
   - caption: General
     chapters:
-    - file: schedule
+    - file: syllabus
   # - caption: Instrument Plans
   #   chapters:
   #   - file: preamp

@@ -141,7 +141,6 @@ Test the effect of ion concentration on action potential shape (and/or pharma to
 - analogy between transistor logic and action potentials
 - basic amplification principles for recording most biological signals
 - implementation of RC circuits for signal processing
-transistor-logic.png
 
 ::::{admonition} Models
 :::{image} /images/transistor-logic.png
@@ -151,11 +150,18 @@ transistor-logic.png
 ::::
 
 ::::{admonition} Experiments
-:::{image} /images/two-stage-amp.png
+Building an analog circuit of an action potential 
+:::{image} /images/analog-spiking-model.png
 :width: 500
 :align: center
 :::
+
 Building an amplifier to measure action potentials in biological tissue.
+:::{image} /images/two-stage-amp.png
+:width: 600
+:align: center
+:::
+
 ::::
 
 ### 6: Neural Circuits/Networks
@@ -165,7 +171,7 @@ Building an amplifier to measure action potentials in biological tissue.
 - behavioral strength as a function of stimulus strength (via spike rate)
 
 :::{admonition} Models
-Computational models of synaptically-connected neurons (even if it is just pre-scripted simulations, would still be instructive). For example, brain oscillations from reciprocally-connected networks.
+Network models: synaptically-connected neurons of the basic RC circuit type (even if it is just pre-scripted simulations, would still be instructive). Change the synaptic weights or connectivity and investigate how it changes what the network "does": ie. brain oscillations from reciprocally-connected networks.
 :::
 
 ::::{admonition} Experiments
@@ -298,8 +304,9 @@ Analog circuit or even photodiode inputs to a network of arduino-based LIF model
 The outputs can then convergently and divergently synapse onto an array of actuators with different synaptic weights to generate antagonistic muscle control. 
 ::::
 
-Odor Discrimination using Insect Electroantennogram Responses from an Insect Antennal Array. Comparison of EAG profiles across various insect species:
+
 ::::{admonition} Olfaction
+Odor Discrimination using Insect Electroantennogram Responses from an Insect Antennal Array. Comparison of EAG profiles across various insect species:
 :::{image} /images/eag-odor-discrimination.png
 :width: 700
 :align: center
