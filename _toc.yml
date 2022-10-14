@@ -7,12 +7,12 @@ parts:
   - caption: General
     chapters:
     - file: schedule
-  - caption: Instrument Plans
-    chapters:
-    - file: preamp
-    - file: intracellular-amp
-    - file: analog-stimulator
-    - file: stimulus-isolation
-  - caption: Tools
-    chapters:
-    - file: circuit-simulations
+  # - caption: Instrument Plans
+  #   chapters:
+  #   - file: preamp
+  #   - file: intracellular-amp
+  #   - file: analog-stimulator
+  #   - file: stimulus-isolation
+  # - caption: Tools
+  #   chapters:
+  #   - file: circuit-simulations

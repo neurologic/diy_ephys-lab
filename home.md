@@ -1,2 +1,1 @@
-# DIY electrophysiology for teaching
-
+# Welcome

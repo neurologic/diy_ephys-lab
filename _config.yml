@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Neurophysiology Lab
+title: Biology of Electricity
 author: Dr. Krista Perks
 # logo: images/NeuronImage_CourseHeader.jpeg
 exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]

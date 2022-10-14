@@ -1,9 +1,11 @@
-# Building The Brain
+# Syllabus
+
+*Title*: **Biology of Electricity**
 
 Alternative titles:
 - **Harnessing Bioelectricity**
 - **Neuromorphic Design**
-- **The Biology of Electricity**
+- **Building the Brain**
 - **Excitable Networks**
 
 Target:
@@ -272,7 +274,11 @@ Amplitude and flicker-frequency tungin.
 Simultaneous multi-channel recordings of movement. Optional: video-tracking.
 ::::
 
-### 11-13: Project Implementations
+### 11-13: "Capstone" Project Ideas
+
+:::{admonition} A Musical Instrument BCI
+Mapping muscle activity onto musical notes (could even be physical oscillator circuits). Divergence and convergence from muscles to notes would combine the muscles in different ways to produce different "songs" from the same movement. The loudness of the notes would be controlled by the spike rate of the motor neurons. 
+:::
 
 ::::{admonition} Retinal Receptive fields
 :::{image} /images/retina.png
@@ -292,21 +298,21 @@ Analog circuit or even photodiode inputs to a network of arduino-based LIF model
 The outputs can then convergently and divergently synapse onto an array of actuators with different synaptic weights to generate antagonistic muscle control. 
 ::::
 
+Odor Discrimination using Insect Electroantennogram Responses from an Insect Antennal Array. Comparison of EAG profiles across various insect species:
 ::::{admonition} Olfaction
 :::{image} /images/eag-odor-discrimination.png
 :width: 700
 :align: center
 :::
 
-Odor Discrimination using Insect Electroantennogram Responses from an Insect Antennal Array. Comparison of EAG profiles across various insect species
-
+Odor plume following (if have working mobile robot to send the control signals to):
 :::{image} /images/olfactory-robot.jpeg
 :width: 500
 :align: center
 :::
-
-Odor plume following (if have working mobile robot to send the control signals to)
 ::::
+
+
 <!-- 
 ## Back-Burner modules
 
