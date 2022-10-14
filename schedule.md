@@ -307,7 +307,7 @@ Odor Discrimination using Insect Electroantennogram Responses from an Insect Ant
 
 Odor plume following (if have working mobile robot to send the control signals to)
 ::::
-
+<!-- 
 ## Back-Burner modules
 
 ### TBD: "Catching" an action potential
@@ -322,7 +322,7 @@ Odor plume following (if have working mobile robot to send the control signals t
 :align: center
 :::
 Use differential amplification techniques to trap an action potential between the electrodes. Does not require electrical stimulation, though that can make it easier. 
-::::
+:::: -->
 
 ## Materials
 
@@ -338,7 +338,7 @@ Use differential amplification techniques to trap an action potential between th
 	- audio input for 2 channels if enough amplification
 	- arduino if slow enough (and enough amplificiation)
 	- serial oscilloscope
-	- **	**, but most expensive
+	- **NiDaq**, but most expensive
 	- Teensy should work great, but don't have it tested yet
 
 
